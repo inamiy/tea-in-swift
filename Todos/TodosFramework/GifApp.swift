@@ -43,7 +43,7 @@ public struct GifApp: RootComponent {
     
     public var viewController: ViewController<Message> {
         return .viewController(
-            .stackView(views: loading ? [.activityIndicator(style: .gray)] : [
+            .stackView(views: loading ? []: [
                 .imageView(image: image),
                 .button(text: "Reload", onTap: .reload)
             ])

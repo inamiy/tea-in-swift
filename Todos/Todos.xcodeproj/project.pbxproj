@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB6141F1EFABCF80071FB77 /* VirtualViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6141D1EFABCE00071FB77 /* VirtualViews.swift */; };
+		1FB614201EFABCF80071FB77 /* VirtualViews+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6141E1EFABCE00071FB77 /* VirtualViews+Rendering.swift */; };
 		837CE92E1EFA925B00F54003 /* TodosFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 837CE92C1EFA925B00F54003 /* TodosFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		837CE9311EFA925B00F54003 /* TodosFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837CE92A1EFA925B00F54003 /* TodosFramework.framework */; };
 		837CE9321EFA925B00F54003 /* TodosFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 837CE92A1EFA925B00F54003 /* TodosFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -21,8 +23,6 @@
 		83CAE46A1EFA6A05001C24C1 /* VirtualViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CAE4681EFA6A05001C24C1 /* VirtualViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83CAE46D1EFA6A05001C24C1 /* VirtualViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CAE4661EFA6A05001C24C1 /* VirtualViews.framework */; };
 		83CAE46E1EFA6A05001C24C1 /* VirtualViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83CAE4661EFA6A05001C24C1 /* VirtualViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		83CAE4751EFA6A1C001C24C1 /* VirtualViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CAE4731EFA6A1C001C24C1 /* VirtualViews.swift */; };
-		83CAE4761EFA6A1C001C24C1 /* VirtualViews+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CAE4741EFA6A1C001C24C1 /* VirtualViews+Rendering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FB6141D1EFABCE00071FB77 /* VirtualViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualViews.swift; sourceTree = "<group>"; };
+		1FB6141E1EFABCE00071FB77 /* VirtualViews+Rendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VirtualViews+Rendering.swift"; sourceTree = "<group>"; };
 		837CE92A1EFA925B00F54003 /* TodosFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TodosFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CE92C1EFA925B00F54003 /* TodosFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodosFramework.h; sourceTree = "<group>"; };
 		837CE92D1EFA925B00F54003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,8 +81,6 @@
 		83CAE4661EFA6A05001C24C1 /* VirtualViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirtualViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CAE4681EFA6A05001C24C1 /* VirtualViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualViews.h; sourceTree = "<group>"; };
 		83CAE4691EFA6A05001C24C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83CAE4731EFA6A1C001C24C1 /* VirtualViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VirtualViews.swift; path = "../../../../../objc.io/ios-app-architectures/elm/Recordings/Recordings/VirtualViews.swift"; sourceTree = "<group>"; };
-		83CAE4741EFA6A1C001C24C1 /* VirtualViews+Rendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "VirtualViews+Rendering.swift"; path = "../../../../../objc.io/ios-app-architectures/elm/Recordings/Recordings/VirtualViews+Rendering.swift"; sourceTree = "<group>"; };
 		83CAE48C1EFA8D69001C24C1 /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		83CAE48D1EFA8D69001C24C1 /* SideEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,8 +168,8 @@
 		83CAE4671EFA6A05001C24C1 /* VirtualViews */ = {
 			isa = PBXGroup;
 			children = (
-				83CAE4731EFA6A1C001C24C1 /* VirtualViews.swift */,
-				83CAE4741EFA6A1C001C24C1 /* VirtualViews+Rendering.swift */,
+				1FB6141D1EFABCE00071FB77 /* VirtualViews.swift */,
+				1FB6141E1EFABCE00071FB77 /* VirtualViews+Rendering.swift */,
 				83CAE4681EFA6A05001C24C1 /* VirtualViews.h */,
 				83CAE4691EFA6A05001C24C1 /* Info.plist */,
 			);
@@ -348,8 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CAE4751EFA6A1C001C24C1 /* VirtualViews.swift in Sources */,
-				83CAE4761EFA6A1C001C24C1 /* VirtualViews+Rendering.swift in Sources */,
+				1FB6141F1EFABCF80071FB77 /* VirtualViews.swift in Sources */,
+				1FB614201EFABCF80071FB77 /* VirtualViews+Rendering.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

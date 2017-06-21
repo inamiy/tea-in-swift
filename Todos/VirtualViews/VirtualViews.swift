@@ -48,6 +48,10 @@ public struct StackView<A> {
 
 public struct TableView<A> {
     public let items: [TableViewCell<A>]
+
+    public init(items: [TableViewCell<A>]) {
+        self.items = items
+    }
     
     func map<B>(_ transform: @escaping (A) -> B) -> TableView<B> {
         return TableView<B>(items: items.map( { item in item.map(transform) }))

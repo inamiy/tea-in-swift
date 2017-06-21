@@ -2,6 +2,8 @@ import UIKit
 
 public struct StrongReferences {
 	private var handlers: [Any] = []
+
+	public init() {}
 	public mutating func append(_ obj: Any) {
 		handlers.append(obj)
 	}
